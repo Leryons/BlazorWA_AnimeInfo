@@ -1,0 +1,67 @@
+﻿.anime-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.anime-card {
+    background-color: #ffffff;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .anime-card:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 65% 15% 1fr 1fr;
+    grid-template-areas:
+        "img img"
+        "title title"
+        "genre genre"
+        "rating episode";
+    height: 100%;
+    gap: 8px;
+}
+
+#cover-img {
+    grid-area: img;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#title {
+    grid-area: title;
+    font-size: 15px;
+    font-weight: normal;
+    overflow: hidden;
+    align-self: center;
+}
+
+#genre {
+    grid-area: genre;
+    font-size: 1em;
+    color: #666666;
+}
+
+#rating {
+    grid-area: rating;
+    font-size: 1em;
+    color: #666666;
+}
+
+#episode {
+    grid-area: episode;
+    font-size: 1em;
+    color: #666666;
+}

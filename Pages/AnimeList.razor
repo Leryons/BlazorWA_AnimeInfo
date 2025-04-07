@@ -1,0 +1,38 @@
+﻿<h3>Top Animes</h3>
+
+@if (animesList == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+
+    <div class="anime-container">
+
+        @foreach (var anime in animesList)
+        {
+            <div class="anime-card">
+
+                <div class="grid-layout">
+
+                    <div id="cover-img">
+                        <a href="@anime.InfoUrl" target="_blank">
+                            <img src="@anime.ImageUrl" alt="Anime Cover" />
+                        </a>
+                    </div>
+
+                    <div id="title">@anime.Title</div>
+
+                    <div id="genre">@anime.Genre</div>
+
+                    <div id="rating">Rating: @anime.Rating</div>
+
+                    <div id="episode">@anime.EpisodeCount ep.</div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+}

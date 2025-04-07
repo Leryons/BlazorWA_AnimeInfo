@@ -1,0 +1,60 @@
+﻿@page "/search"
+
+<div class="main-layout">
+
+    <div class="search-layout">
+
+        <h3 id="page-title">Anime Search</h3>
+
+        <div id="search-bar">
+
+            <input id="input"
+                   @oninput="(e) => searchQuery = e?.Value?.ToString() ?? string.Empty"
+                   @onkeydown="OnSearch"
+                   placeholder="Search animes by name..." />
+
+            <button id="search-button" @onclick="SearchButtonClicked">
+
+                <img id="search-icon" src="./Resources/icon/search-icon.png" />
+
+            </button>
+        </div>
+
+    </div>
+
+    @if (animeSelected != null)
+    {
+        <div class="info-grid">
+
+            <div id="info-box">
+
+                <div id="title">@animeSelected.Title</div>
+
+                <div id="genre">Genre: @animeSelected.Genre</div>
+
+                <div id="rating">Rating: @animeSelected.Rating</div>
+
+                <div id="episode">@animeSelected.EpisodeCount Episodes.</div>
+
+                <div id="release-date">Release-date: @animeSelected.ReleaseDate</div>
+            </div>
+
+            <div id="synopsis-box">
+
+                <div id="synopsis-title">Synopsis</div>
+
+                <div id="synopsis">@animeSelected.Synopsis</div>
+
+            </div>
+
+
+            <div id="cover-img">
+                <a href="@animeSelected.InfoUrl" target="_blank">
+                    <img src="@animeSelected.ImageUrl" alt="@animeSelected.Title" />
+                </a>
+            </div>
+
+        </div>
+    }
+
+</div>
