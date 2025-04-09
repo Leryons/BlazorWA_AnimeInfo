@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "AnimeInfo",
   "resources": {
-    "hash": "sha256-Bap3oa4pVr9gmmJB/ecd+m0ShXXE7klEIjlrF6tSA+U=",
+    "hash": "sha256-Fr+sYMBpD+gxZ+YTBRA4tepsCZfm5mfFNlmjRSJNU0g=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
     },
@@ -18,7 +18,7 @@
     },
     "coreAssembly": {},
     "assembly": {
-      "AnimeInfo.wasm": "sha256-AfTot9pgY8SWkfi5T+j5uYN1EzvQeyKRc/VYYjMX6cg=",
+      "AnimeInfo.wasm": "sha256-/BE1r6B66G5VOJFv3lPcGi4cqM+sUMbWKOCzDdDM/jQ=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-jRrN3pi2qebfLzdKJ/OsTNe3rmnYyw3nPG31e5eJoUk=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-tnRELayaBUAcbiqIljzdDq8euLXuQ0l3T2k1rwJQucY=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-EOdgiUG489I80b9Fbkl0R+BtnmOuoPX6wJkulSjtQmE=",
